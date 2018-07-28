@@ -1,0 +1,53 @@
+
+<!- We start with two buttons, "Add name" and "remove" with placeholder Name and begin Name array "" at 0
+AND a randomize button
+
+when you hit "add name," you add the next input box with "", add "" at next array position
+AND you add a "remove" button beside the box.
+AND you add a "randomize" name button.
+
+WITH EACH ADDITIONAL "add name"
+you add another input box AND you add a corresponding remove button AND you add a position in the array.
+
+WHEN YOU FILL IN A Name
+You change the string at that position of the array. (change on leaving input)
+
+when you hit "subtract name" button, you delete that box (and any contents), and pop array a place.
+
+When you hit the randomize button, you shuffle according to formula
+You take first two positions and make an array and output that, and repeat.
+Take oddball name and plug it into the zero array
+Print the pairs, concatenating them in code
+Have a return button
+Hit that return button to come to the original screen.
+
+
+
+ ->
+
+
+
+
+
+
+
+
+
+<html>
+<body>
+<button id="add_name" value="Add name"></button>
+<button id="random" value="Randomize"></button>
+
+<form method="post" action="make_names">
+<input type="text" class="entry" name="name" placeholder="Name">
+<button id="remove_name" value="Remove"></button>
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
