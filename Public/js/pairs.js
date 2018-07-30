@@ -5,6 +5,7 @@
 <button id="randomize" value="randomize">Randomize</button>
 </form>
 
+
 <button onclick="addName()">Add name</button>
 
 <script>
@@ -14,30 +15,22 @@ function addName() {
     var btn = document.createElement("input");
    btn.setAttribute("type", "text");
    btn.setAttribute("id", "textbox");
-   btn.setAttribute("placeholder", "Name");
+   btn.setAttribute("onchange", "subName()");
     document.body.appendChild(btn);
-    namesArray.push("");
+    namesArray.push(" ");
     return namesArray;
- }
-
-  document.getElementById("textbox").onkeyup = subName(namesArray);
+}
 
 
-  function subName(namesArray) {
-  console.log("You called it.");
-  namesArray.splice(0, 1, "Doug Smock")
+function subName(namesArray) {
+    var newName = document.getElementById("textbox");
+    ;
 }
 
 
 
 
-
-
 </script>
-
-
-
-
 </body>
 </html>
 
